@@ -1,0 +1,1 @@
+[2018-01-22 04:47:58] php_system.INFO: E_WARNING: array (   'type' => 2,   'message' => 'unlink(/var/www/vhosts/digiboost.com/wp-content/cache/page_enhanced/digiboost.com/sitemap_index.xml/_index.html_gzip_old): No such file or directory',   'file' => '/var/www/vhosts/digiboost.com/wp-content/plugins/w3-total-cache/Cache_File_Cleaner_Generic.php',   'line' => 71, ) [] []

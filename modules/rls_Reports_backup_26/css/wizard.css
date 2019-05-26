@@ -1,0 +1,169 @@
+@CHARSET "UTF-8";
+
+.cb {clear:both;}
+
+#reports-wizard-navigate 
+{	
+    margin: 15px 0 0 0;
+    }
+    
+    #reports-wizard-navigate h4 {
+        float: left;
+        margin: 0 10px 0 0;
+    }
+    
+    #reports-wizard-navigate h4 a.active {
+        color: black;
+        text-decoration: none;
+    }
+
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+    height: 1px;
+}
+
+.reports-nav-divider {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+
+//Step 3 begin
+
+#rls_sortable {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+}
+#rls_sortable li { 
+	margin: 0 3px 3px 3px; 
+	padding: 0.4em; 
+	padding-left: 1.5em; 
+	font-size: 1.4em; 
+	height: 18px; 
+}
+#rls_sortable li span { 
+	position: absolute; 
+	margin-left: -1.3em; 
+}
+.rls_sortable{
+	padding:10px;
+}
+
+.rls_wizard_main
+{
+	width:100%;
+    }
+    
+    .rls_wizard_main h3 {
+        padding: 5px 10px;
+    }
+    
+.rls_wizard_left
+{
+	width:230px;
+	float:left;
+	margin: 0;
+    }
+
+.rls_wizard_right{
+	margin: 0 0 0 235px;
+	height:500px;
+}
+
+.rls_wizard_left_box
+	{
+	height:260px;
+	margin: 0 0 10px 0;
+	background-color: #FFFFFF;
+    }
+    
+    .rls_wizard_left_box h3 {
+        margin-top: 0 !important;
+    }
+    
+.rls_wizard_left_header{
+	height:30px;
+	
+}
+
+.rls_wizard_left_container 
+	{
+	height:220px;
+	overflow:auto;
+	padding: 0 0 0 5px;
+
+    }
+    
+    .rls_wizard_left_container table
+    {
+        width: 100%;
+        }
+        
+        .rls_wizard_left_container table tr:hover {
+            background-color: #e7f4f9;
+        }
+    
+	    .rls_wizard_left_container table td {
+	        border-bottom: 1px solid #ccc;
+	    }
+
+
+.rls_wizard_right_main 
+{
+	background-color: #ffffff;
+	}
+	
+
+.rls_wizard_right_container{
+	height:500px;
+	background-color: #ffffff;
+  overflow-y:auto;
+}
+.rls_wizard_right_main_header{
+	height:30px;
+}
+
+#filter_fields_of_module tr,
+#fields_of_module tr,
+#groupby_fields_of_module tr,
+#summaries_fields_of_module tr
+{
+	cursor: pointer;
+}
+
+.rls_table_sortable
+{
+    width:100%;
+    }
+    
+    .rls_table_sortable tr {
+        height: 25px;
+    }
+    
+.rls_selected_field > td:first-child { 
+/* .rls_selected_field td:first-child {  
+    RLS Vic 16.03.2016 conflict with Skills TreeGrid */
+    cursor: move;
+    text-align: center;  
+}
+
+.wizard-fields-placeholder {
+	height: 50px;
+	background-color: #ccc;
+}
+
+#wizard-fields-sortable tr.ui-sortable-helper 
+{
+	background-color: #ccc;
+	
+    }
+    
+    #wizard-fields-sortable tr.ui-sortable-helper td {
+        background-color: #ccc;
+        padding: 10px;
+    }
+

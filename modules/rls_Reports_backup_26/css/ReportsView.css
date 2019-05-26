@@ -1,0 +1,77 @@
+.report-spreadsheet 
+{
+  
+  }
+  
+  .report-spreadsheet th {
+    border-bottom: 2px solid black;
+    border
+  }
+  
+  .report-spreadsheet td {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 4px 6px;
+  }
+  
+  .reports-grid-group
+  {
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: 1px solid;
+    }
+    
+    .reports-grid-group h1 span {
+        width: 8px;
+        height: 8px;
+        display: block;
+        float: left;
+        margin: 4px 2px 0 0;
+    }
+
+    .reports-grid-group h1 span.expanded {
+        background-image: url("../images/basic_search.gif");
+    }
+    
+    .reports-grid-group h1 span.collapsed {
+        background-image: url("../images/advanced_search.gif");
+    }
+        
+    .reports-grid-group div.reports-sheet-container {
+        padding: 5px;
+    }
+    
+    .reports-grid-group h1 
+    {
+        padding: 5px 5px 5px 10px;
+        background: #ccc;
+        }
+        
+        .reports-grid-group h1 a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .reports-grid-group h1 a:hover {
+            text-decoration: underline;
+        }
+     
+    .reports-grid-group table 
+    {
+        border-right: 1px solid;
+        }
+        
+        .reports-grid-group table th {
+            border-bottom: 1px solid black;
+        }
+        
+        .reports-grid-group table td {
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 4px;
+        }
+        
+.scrollBars {
+	max-height: 800px !important; 
+}
+
