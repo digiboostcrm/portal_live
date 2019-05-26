@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title></title>
+      <style type="text/css">
+         p{
+         margin-top: 15px;
+         line-height: 24px;
+         }
+      </style>
+   </head>
+   <body>
+      <table border="0" cellspacing="0" cellpadding="0" width="100%">
+         <tbody>
+            <tr>
+               <td align="center" valign="top">
+                  <table style="border-collapse:collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
+                     <tbody>
+                        <tr>
+                           <td align="center">
+                              <table border="0" cellspacing="0" cellpadding="0" width="700" bgcolor="#fff">
+                                 <tbody>
+                                    <tr>
+                                       <td align="center"><img style="display: block; margin-bottom: 20px;" src="https://digiboost.com/upload/new-logo.png" border="0" alt="" width="700"></td>
+                                    </tr>
+                                    <tr>
+                                       <td style="background-color: #FAFAFA;border-bottom:3px solid #00aeef;font-family: helvetica, arial, verdana, sans-serif; font-size: 14px;color:#505050;padding:40px 32px">
+                                          {mail_body}
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="background-color: #FAFAFA;font-family: helvetica, arial, verdana, sans-serif; font-size: 14px;color:#505050;padding:5px 32px 20px 32px">
+                                          <p style="font-size:12px; text-align:center;">
+                                             425 Soledad Suite #350, San Antonio, Texas, 78205<br>
+                                             Tel: <span style="color:#0099ff"> 1 (210) 227-DIGI (3444)</span>,
+                                             Email: <a href="mailto:sales@digiboost.com">sales@digiboost.com</a>,
+                                             Website: <a href="https://digiboost.com" target="_blank">https://digiboost.com</a><br>
+                                          </p>
+                                          <p style="text-align:center; margin-bottom: 0px; margin-top:30px"><strong>*** This is an automatically generated email, please do not reply ***</strong></p>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+      </table>
+   </body>
+</html>

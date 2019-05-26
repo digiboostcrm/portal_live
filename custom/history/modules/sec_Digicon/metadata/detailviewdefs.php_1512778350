@@ -1,0 +1,115 @@
+<?php
+$module_name = 'sec_Digicon';
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_DETAILVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_detailview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'category_id',
+            'label' => 'LBL_SF_CATEGORY',
+          ),
+          1 => 
+          array (
+            'name' => 'subcategory_id',
+            'label' => 'LBL_SF_SUBCATEGORY',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 'date_entered',
+          1 => 'date_modified',
+        ),
+        2 => 
+        array (
+          0 => 'description',
+        ),
+        3 => 
+        array (
+          0 => 'assigned_user_name',
+        ),
+      ),
+    ),
+  ),
+);
+$viewdefs['sec_Digicon']['DetailView']['templateMeta'] = array (
+  'form' => 
+  array (
+    'buttons' => 
+    array (
+      0 => 'EDIT',
+      1 => 'DUPLICATE',
+      2 => 'DELETE',
+      3 => 'FIND_DUPLICATES',
+    ),
+  ),
+  'maxColumns' => '2',
+  'widths' => 
+  array (
+    0 => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+    1 => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

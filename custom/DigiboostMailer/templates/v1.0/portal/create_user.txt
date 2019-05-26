@@ -1,0 +1,29 @@
+Dear <b>{customer_name}</b>,
+<p>
+	Thank you for choosing to partner with Digiboost – we are excited and honored to serve you.<br/><br/>
+
+	Let’s get started! Below are a few things that will be important for us to make sure we can collaborate with you going forward.
+</p>
+<p>
+	<ol style="line-height: 2;">
+		<li>Setting up your account inside the Digiboost portal. Instructions are below:<br/>
+            Log in at: <a href="https://portal.digiboost.com" target="_blank">https://portal.digiboost.com</a><br/>
+			Username: <strong style="color:#f32500">{user_name}</strong><br/>
+			Temporary Password: <strong style="color:#f32500">{password}</strong> (please change the password to a secure one of your choice)
+		</li>
+		<li>Welcome Call and Digiboost 101 walk through</li>
+	</ol>
+</p>
+<p>Your customer success manager will be calling you to walk you through the next steps. Your success manager will help you get started and begin the implementation of our services.</p>
+
+<p>If you have any questions, please contact our Customer Success Team by calling 210.227.3444 (digi) X 2  or by emailing am@digiboost.com.</p>
+<p>
+	Welcome to the Family, 
+</p>
+<p>
+	<br/>
+	Thank you - Your Friends in the Web Business<br/ >
+	DIGIBOOST<br/ >
+210.227.3444 <br/ >
+	<a href="https://digiboost.com" target="_blank">digiboost.com</a>
+</p>

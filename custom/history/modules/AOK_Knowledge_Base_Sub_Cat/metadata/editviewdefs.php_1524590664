@@ -1,0 +1,65 @@
+<?php
+$module_name = 'AOK_Knowledge_Base_Sub_Cat';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 'assigned_user_name',
+        ),
+        1 => 
+        array (
+          0 => 'description',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'aok_knowledge_base_categories_aok_knowledge_base_sub_cat_1_name',
+            'label' => 'LBL_AOK_KNOWLEDGE_BASE_CATEGORIES_AOK_KNOWLEDGE_BASE_SUB_CAT_1_FROM_AOK_KNOWLEDGE_BASE_CATEGORIES_TITLE',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+$viewdefs['AOK_Knowledge_Base_Sub_Cat']['EditView']['templateMeta'] = array (
+  'maxColumns' => '2',
+  'widths' => 
+  array (
+    0 => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+    1 => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

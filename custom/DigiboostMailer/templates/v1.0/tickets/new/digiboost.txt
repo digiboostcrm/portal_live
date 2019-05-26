@@ -1,0 +1,18 @@
+Dear <b>{name}</b>,
+<p>
+	Customer <strong style="color:#f32500">{customer_name}</strong> submitted a ticket with the following details.
+</p>
+<p color="balck">
+	<b>Ticket Number:</b> {case_number}<br/>
+	<b>Subject:</b> {subject}<br/>
+	<b>Priority:</b> {priority}<br/>
+	<b>Category:</b> {category}<br/>
+	<b>Description:</b> {description}<br/>
+</p>
+<p><a href="https://digiboost.com/portal/index.php?action=DetailView&module=Cases&record={id}" target="_blank">Click to Review Ticket</a>.</p>
+<p>
+	<br/>
+	Thank you,<br/ >
+	DIGIBOOST<br/ >
+	<a href="https://digiboost.com" target="_blank">digiboost.com</a>
+</p>

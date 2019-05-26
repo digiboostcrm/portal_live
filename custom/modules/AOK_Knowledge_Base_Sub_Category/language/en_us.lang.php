@@ -1,0 +1,10 @@
+<?php
+// created: 2018-04-18 22:07:52
+$mod_strings = array (
+  'LNK_NEW_RECORD' => 'Create CUSTOM SUB',
+  'LNK_LIST' => 'View CUSTOM SUB',
+  'LNK_IMPORT_AOK_KNOWLEDGE_BASE_SUB_CATEGORY' => 'Import CUSTOM SUB',
+  'LBL_LIST_FORM_TITLE' => 'CUSTOM SUB List',
+  'LBL_SEARCH_FORM_TITLE' => ' CUSTOM SUB',
+  'LBL_HOMEPAGE_TITLE' => 'My CUSTOM SUB',
+);

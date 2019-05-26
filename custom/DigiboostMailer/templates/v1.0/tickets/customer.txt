@@ -1,0 +1,17 @@
+Dear <b>{customer_name}</b>,
+<p>
+	Thank you for your ticket submission.  Please note the ticket number for future references.
+</p>
+<p color="balck">
+	<b>Ticket Number:</b> {case_number}<br/>
+</p>
+<p>Please expect a response within 48 hours of your submission.  If this is an emergency please contact us at <b>210-227-3444</b> and reference your ticket number above.</p>
+<p>You can review your ticket by logging into our <a href="https://portal.digiboost.com" target="_blank">portal</a>.</p>
+<p>As always, it is our pleasure to assist you in any way possible!</p>
+<p>
+	<br/>
+	Thank you - Your Friends in the Web Business<br/ >
+	DIGIBOOST<br/ >
+210.227.3444 <br/ >
+	<a href="https://digiboost.com" target="_blank">digiboost.com</a>
+</p>

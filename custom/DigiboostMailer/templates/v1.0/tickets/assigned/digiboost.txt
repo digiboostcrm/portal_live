@@ -1,0 +1,19 @@
+Dear <b>{name}</b>,
+<p>
+	Ticket with reference number <strong>{case_number}</strong> has been assigned to you. Below are the details.
+</p>
+<p color="balck">
+	<b>Customer Name:</b> <strong style="color:#f32500">{customer_name}</strong><br/>
+	<b>Ticket Number:</b> {case_number}<br/>
+	<b>Subject:</b> {subject}<br/>
+	<b>Priority:</b> {priority}<br/>
+	<b>Category:</b> {category}<br/>
+	<b>Description:</b> {description}<br/>
+</p>
+<p><a href="https://digiboost.com/portal/index.php?action=DetailView&module=Cases&record={id}" target="_blank">Click to Review Ticket</a>.</p>
+<p>
+	<br/>
+	Thank you,<br/ >
+	DIGIBOOST<br/ >
+	<a href="https://digiboost.com" target="_blank">digiboost.com</a>
+</p>

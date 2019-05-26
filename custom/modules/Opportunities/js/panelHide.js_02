@@ -1,0 +1,160 @@
+
+	$( document ).ready(function() {
+		
+		var return_mod = $("#return_mod").val();
+		var sdr = $("#custom_lead_account").val();
+		
+		if(sdr == ''){
+			$("#account_panel_show").parent("div").parent("div").hide();
+			$("#detailpanel_0").parent("div").hide();
+		}else{
+			var lead_id = $("#parent_lead_id").val();
+			$("#custom_lead_id").val(lead_id);
+			$("#custom_lead_id").parent("div").parent("div").hide();
+			$('#account_panel_show').prop('checked', true);
+			$("#account_name").parent("div").parent("div").hide();
+			//$("#detailpanel_0").parent("div").hide();
+		}
+		
+		/* our field logic 01-FEB-2018*/
+		
+		var detailView = $("#detailView").val();
+		var addButton = '<button type="button" class="btn btn-danger email-address-remove-button" title="Add Product " id="Leads0_email_widget_add" onclick="addRow()">'
+		+'<span class="glyphicon glyphicon-plus"></span><span></span>'
+		+'</button>';
+		if(detailView){
+			addButton = '';
+		}
+			
+			customHtmlTable = "<table id='product_table' border='1' class='customTable' width='100%' height='50%'>\n\
+                  <tr style='background: #cc181e;height:50px;text-align: center;'>\n\
+                    <th style='color:white;text-align: center;'>Product Name</th>\n\
+                    <th style='color:white;text-align: center;'>Product Amount</th>\n\
+                    <th style='color:white;text-align: center;'>Product Out Sourced</th>\n\
+                    <th style='color:white;text-align: center;'>Product Description</th>\n\
+                    <th style='color:white;text-align: center;'></th>" + addButton + "\n\
+                  </tr>\n\
+                </table>";
+		
+		if(detailView){
+			
+			$("#top-panel-1").html(customHtmlTable);
+		}else{
+			
+			$("#detailpanel_2").html(customHtmlTable);
+		}
+		
+		var rowEditCount = $("#totalCountRow").val();
+		//check if record edit and adding row
+		if(!rowEditCount){
+			addRow(0, '');
+			$("#totalCountRow").val(1);
+		}else{
+			for (j = 0; j < rowEditCount; j++) {
+				addRow(j,'',detailView);
+			}
+			//var rec_id = $("input[name='record']").val(); //current record id
+			var jsonData = $("#rowData").val();
+			var json_array = jQuery.parseJSON(jsonData);
+			var rowCount = 0;
+			$.each(json_array, function (i, dataArray) {
+				var name = dataArray.name;
+				var fieldName = name.split('_')[0];
+				if (i % 4 == 0 && i != 0) {
+					rowCount++;
+				}
+				$("#"+fieldName+'_'+rowCount).val(dataArray.value);
+				
+			});	
+			
+		}
+		
+		
+	});
+
+	function showHide(data){
+		var check = $("#"+data).is(":checked")
+		if(check){
+			$("#detailpanel_0").parent("div").show();
+			$("#account_name").parent("div").parent("div").hide();
+			$("#account_id").val('');
+			$("#account_name").val('');
+		}
+		else{
+			$("#detailpanel_0").parent("div").hide();
+			$("#lead_account_id").val('');
+			$("#account_email").val('');
+			$("#account_name").parent("div").parent("div").show();
+		}	
+		
+	}
+	
+/* 01-02-2018*/	
+		function addRow(totalCountRow, editView,detailView) {
+		
+		if(totalCountRow != 0 && editView != ''){
+			var totalCountRow = $('#totalCountRow').val();
+			$('#totalCountRow').val(+totalCountRow + 1);
+		}
+		readOnly = '';
+		disabled = '';
+		console.log(detailView);
+		if(detailView){
+			readOnly = 'Readonly';
+			disabled = 'disabled';
+		}
+	    //console.log(totalCountRow);
+		var fieldTD = '';
+		var removeButton = '<td style="padding:0px"></td>';
+		var outSourcedDom = $("#outSourceDom").val();;
+		
+		fieldTD = '<td style="text-align: center;"><input type="text" class="productData" '+readOnly+' id="productName_'+totalCountRow+'" name="productName_'+totalCountRow+'"></td>';
+		fieldTD += '<td style="text-align: center;"><input type="text" class="productData" '+readOnly+' id="productAmount_'+totalCountRow+'" name="productAmount_'+totalCountRow+'"></td>';
+		fieldTD += '<td style="text-align: center;"><select class="productData" '+disabled+' id="outSourced_'+totalCountRow+'" name="outSourced_'+totalCountRow+'">'+outSourcedDom+'</select></td>';
+		fieldTD += '<td style="text-align: center;"><textarea class="productData" '+readOnly+' id="productDescription_'+totalCountRow+'" name="productDescription_'+totalCountRow+'" style="width:280px;" cols="50" rows="5"></textarea></td>';
+		
+		
+	
+		if (totalCountRow != 0 && readOnly == ''){
+			removeButton = '<td style="padding-left:12px !important"><button onclick="removeRow(\'tr_' + totalCountRow + '\');" type="button" id="customRow" class="btn btn-danger email-address-remove-button" title="Remove"><span class="glyphicon glyphicon-remove"></span></button></td>';
+		}
+		
+		var html = '<tr id="tr_' + totalCountRow + '"> ' + fieldTD + removeButton+' </tr>';
+						
+		$("#product_table").append(html);
+}
+
+function removeRow(rowID) {
+    $("#" + rowID).remove();
+    var totalCountRow = $('#totalCountRow').val();
+    //$('#totalCountRow').val(+totalCountRow - 1);
+}
+
+function getRowData(moduleName) {
+	
+    var data = [];
+    //getting current date and time
+    var currentdate = new Date();
+    /*
+	var datetime = currentdate.getDate() + "/"
+            + (currentdate.getMonth() + 1) + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds();
+			*/
+    //getting all fields value from layout
+    $.each($(".productData"), function (index, ele) {
+        data.push({name: ele.name, value: ele.value});
+    });
+
+    var fieldLength = 4;
+    var total_rows = data.length / fieldLength;
+    
+	console.log(data);
+	console.log(total_rows);
+	$("#totalCountRow").val(total_rows);
+    $("#rowData").val(JSON.stringify(data));
+    return true;
+}
+	
